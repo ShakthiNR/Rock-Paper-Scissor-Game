@@ -1,0 +1,97 @@
+
+.box-layout--points {
+   
+    padding: 2px;
+    background-color: #FAF7F0;
+    
+    letter-spacing: 0.1rem;
+    
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+.box-layout--points > div{
+    padding: 0.35rem;
+    font-size:  clamp(1.1rem, 2.5vw, 1.4rem);
+ 
+}
+
+.box-layout--choices{
+   
+    padding: 0 2rem;
+}
+
+.box-layout--player-btn{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-btn--rock button,.player-btn--paper button,.player-btn--scissor button{
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    margin: 0.45rem 10px;
+    padding: 0.25rem;
+    border:none;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.player-btn--rock button:hover,.player-btn--paper button:hover,.player-btn--scissor button:hover{
+    transform: translate(0,-4px);
+}
+
+.result-icon-player{
+    transform:  rotate(90deg)
+}
+.result-icon-player-scissor{
+    transform: scaleY(-1) rotate(180deg)
+}
+.result-icon-computer{
+    transform: scaleY(-1) rotate(-90deg)
+}
+
+.choices-icons{
+   
+    border-radius: 3px;
+    min-height: 100px;
+    background-color: transparent;
+    color: #fff;
+    margin: 1.2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bounce-icon-player{
+    animation: shakePlayerIconAnimation 0.8s ease-in-out infinite;
+}
+
+.bounce-icon-computer{
+    animation: shakeComputerIconAnimation 0.8s ease-in-out infinite;
+}
+
+@keyframes shakePlayerIconAnimation{
+    0%,
+    100%{
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: rotate(80deg);
+    }
+}
+@keyframes shakeComputerIconAnimation{
+    0%,
+    100%{
+        transform: scaleY(-1) rotate(-80deg);
+    }
+    50%{
+        transform:  scaleY(-1) rotate(-100deg);
+    }
+}

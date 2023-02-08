@@ -1,0 +1,285 @@
+
+ :root{
+ /*  --lightBackground1:#E8E2E2;
+  --lightBackground2:#F5F5F5; */
+
+
+  --lightBackground1:#F9F9F9;
+  --lightBackground2:#ccc;
+
+
+
+  --darkBackground1:#222;
+  --darkBackground2:black;
+  --textBlack:#222;
+  --textWhite: #eee;
+  --textDarkWhite:#fff;
+} 
+
+
+
+@font-face {
+  font-family:"edoWebfont" ;
+  src: url("/src/assets/Fonts/edo-webfont.woff") format('woff');
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  overflow: hidden !important;
+}
+.light-welcomePageLayout{
+ 
+ background: radial-gradient(
+      circle closest-corner at center 225px,
+      var(--lightBackground1),
+      var(--lightBackground2) 100%
+    ) no-repeat; 
+
+  color: var(--textBlack);
+  height: 100vh;
+  font-family: 'edoWebfont' ;
+
+  transition: all 0.75s;
+ 
+  
+}
+
+
+
+.light-heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+   
+  line-height: 1.5rem;
+  letter-spacing: 0.25rem;
+  
+  padding-top: 4.5rem; 
+  padding-bottom: 1rem;
+
+  text-shadow:
+  2px 1px 1px var(--textWhite), 1px 2px 1px black,
+  1px 0px 1px var(--textWhite), 0px 1px 1px black,
+  3px 2px 1px var(--textWhite), 2px 3px 1px black,
+  4px 3px 1px var(--textWhite), 3px 4px 1px black,
+  5px 4px 1px var(--textWhite), 4px 5px 1px black,
+  6px 5px 1px var(--textWhite), 5px 6px 1px black,
+  7px 6px 1px var(--textWhite); 
+}
+
+.light-mButton-inner,.light-toggleBtn{
+  color: var(---textBlack);
+
+  background-color: transparent;
+    border:none;
+    font-size:clamp(1.55rem, 4vw, 1.65rem);
+    cursor: pointer;
+}
+.light-toggleBtn{
+  padding-right: 1rem !important;
+}
+
+
+
+
+
+
+
+.welcomePageLayout{
+
+  background: radial-gradient(
+        circle closest-corner at center 225px,
+        var(--darkBackground1),
+        var(--darkBackground2) 100%
+      ) no-repeat !important; 
+  color: #eee;
+
+  transition: all 0.75s;
+}
+.heading{
+  text-shadow:
+    1px 0px var(--textBlack), 0px 1px 1px #eee,
+    2px 1px 1px var(--textBlack), 1px 2px 1px #eee,
+    3px 2px 1px var(--textBlack), 2px 3px 1px #eee,
+    4px 3px 1px var(--textBlack), 3px 4px 1px #eee,
+    5px 4px 1px var(--textBlack), 4px 5px 1px #eee,
+    6px 5px 1px var(--textBlack), 5px 6px 1px #eee,
+    7px 6px 1px  var(--textBlack);
+}
+.mButton-inner,.toggleBtn{
+  color: var(---textWhite)
+}
+
+
+
+
+
+
+.game-layout{
+
+  height: 100vh;
+  border:1px solid black;
+
+  font-family:'edo-webfont',"sans-serif";
+
+  background: radial-gradient(
+        circle closest-corner at center 225px,
+        var(--darkBackground1),
+        var(--darkBackground2) 100%
+      ) no-repeat !important; 
+  color: #eee;
+
+  transition: all 0.75s;
+}
+
+
+.light-game-layout{
+  height: 100vh;
+  border:1px solid black;
+
+  font-family:'edo-webfont',"sans-serif";
+
+  
+   background: radial-gradient(
+        circle closest-corner at center 225px,
+        var(--darkBackground3),
+        var(--darkBackground4) 100%
+      ) no-repeat !important; 
+  color: #222;
+  transition: all 0.75s;
+
+}
+
+.header--gameSet{
+  background-color:var(--textDarkWhite);
+  color: var(--textBlack) ;
+
+
+
+    font-weight: 900;
+    border-radius: 25px;
+    padding: 0 10px;
+    
+    display: flex;
+    align-items: center;
+
+}
+
+
+.light-header--gameSet{
+  background-color: var(--textWhite);
+  color:var(--textBlack);
+  font-weight: 900;
+    border-radius: 25px;
+    padding: 0 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+.backButton,.startAgain{
+  color: var(--textDarkWhite);
+}
+
+.light-backButton,.light-startAgain{
+  color: var(---textBlack);
+  border:1px solid transparent;
+  cursor: pointer;
+  font-size:  clamp(1.1rem, 4vw, 1.2rem);
+
+  background-color: transparent;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+ 
+  padding: 0.25rem 0.5rem;
+  transition: all 0.6s;
+
+  display: flex;
+  align-items: center;
+}
+
+.light-header--backButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+   
+   border:1px solid transparent;
+   transition: all 0.6s;
+}
+
+
+.light-header--backButton:hover{
+  border:1px solid #222;
+   
+    transform: translate( -5px,0);
+}
+
+.light-startAgain:hover{
+  border:1px solid #222;
+  transform: translate( 0, -5px);
+  transition: all 0.6s;
+}
+
+.backButton-icon{
+  color: var(--textDarkWhite);
+}
+.light-backButton-icon{
+  color: var(--textBlack) !important;
+  font-size:  clamp(1.75rem, 4vw, 1rem) !important;
+}
+
+.box-layout--points {
+  color:var(--textBlack);
+}
+
+
+
+.choices-icons{
+  color: var(--textDarkWhite) ;
+}
+
+
+.light-choices-icons{
+color: var(--textBlack)!important;
+}
+
+
+
+@media (max-width:425px) {
+  .box-layout--points{
+    background-color: transparent !important;
+    color: #fff ;
+  }
+  .light-box-layout--points{
+    color: #222;
+  }
+  
+}
+
+@media (min-width:425px) and  (max-width:550px) {
+.box-layout--points{
+  background-color: transparent !important;
+  color: #fff;
+}
+.light-box-layout--points{
+  background-color: transparent !important;
+  color: #222;
+}
+
+}
+@media (min-width:550px ) and (max-width:800px){
+  .box-layout--points{
+    background-color: transparent !important;
+    color: #fff;
+     }
+
+     .light-box-layout--points{
+      color: #222;
+    }
+}

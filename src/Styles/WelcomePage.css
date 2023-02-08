@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family:"edoWebfont" ;
+    src: url("/src/assets/Fonts/edo-webfont.woff") format('woff');
+}
+@font-face {
+    font-family:"fontello" ;
+    src: url("/src/assets/Fonts/fontello.woff2" ) format('woff2');
+}
+
+
+.welcomePageLayout{
+    height: 100vh;
+   font-family: "edoWebfont";
+  
+} 
+
+header{
+   
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: fit-content;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.mButton-inner,.toggleBtn{
+    background-color: transparent;
+    border:none;
+    font-size:clamp(1.55rem, 4vw, 1.65rem);
+    cursor: pointer;
+    
+
+}
+.toggleBtn{
+    padding-right: 1rem !important;
+}
+
+.heading {
+
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+   
+    line-height: 1.5rem;
+    letter-spacing: 0.25rem;
+    
+    padding-top: 4.5rem; 
+    padding-bottom: 1rem;
+
+     
+} 
+
+
+.mButton-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    
+}
+
+
+.centerCard{
+    display: grid;
+    place-items: center;
+
+    height: 20vh;
+}
+
+
+
+.inButton{
+    margin-top: clamp(0.5rem,4vw,1.5rem);
+
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    margin: clamp(0.75rem,4vw,1.75rem);
+    font-size:clamp(1.25rem, 4vw, 1.5rem);
+}
+select{
+
+    /* width: clamp(50px,4vw,150px);
+     */
+  padding: clamp(2px,4vw,3px);
+  font-size:clamp(0.2rem, 4vw, 1rem);
+  text-align: center;
+  color: #444;
+  
+}
+
+#gamesetSelect{
+    width: clamp(50px,4vw,70px);
+}
+
+#gameset option{
+    width: 50px;
+}
+
+
+
+select, option:checked { 
+    font-weight: bold; 
+}
+
+.startGame{
+   
+    
+    font-size: clamp(0.7rem, 4vw, 0.9rem);
+    color: #07182E;
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    box-shadow: 10px 10px black;
+
+    transition: 0.7s ease-in-out;
+
+}
+
+.startGame:hover{
+    box-shadow: 0px 0px black;
+    transition: 0.7s ease-in-out;
+}
+
+
+
+footer{
+    
+   font-family: cursive ;
+  
+    text-align: center;
+    margin-top: 3rem;
+
+    font-size:clamp(0.5rem, 4vw, 1.15rem) ;
+       
+}
+
+
+
+@media(width<600px){
+    .startGame{
+        padding:5px 10px ;
+       
+    }
+}
