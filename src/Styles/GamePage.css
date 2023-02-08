@@ -153,7 +153,8 @@ button{
     }
 
     .player-btn--rock button:hover,.player-btn--paper button:hover,.player-btn--scissor button:hover{
-        transform: none;
+        transform: none !important;
+        -webkit-transform: none !important;
     }
     
    
@@ -174,7 +175,8 @@ button{
  @media (min-width:425px) and  (max-width:550px) {
 
     .player-btn--rock button:hover,.player-btn--paper button:hover,.player-btn--scissor button:hover{
-        transform: none;
+        transform: none !important;
+        -webkit-transform: none !important;
     }
   
     
